@@ -67,12 +67,23 @@
    background-color: transparent;
    border-radius: 50%;
    box-shadow: 25px 15px 0px 0px yellow;
+   animation-duration: 5s;
+   animation-name: crimsonMoon;
+   animation-iteration-count: infinite;
 }
 
 @keyframes twinkle {
    20% {
       transform: scale(0.75);
       opacity: 0.5;
+   }
+}
+
+@keyframes crimsonMoon {
+   45% {
+      transform: scale(1.25);
+      opacity: 0.7;
+      box-shadow: 25px 15px 0px 0px crimson;
    }
 }
 
