@@ -227,13 +227,14 @@ h1 {
    width: 35%;
    background: #BC8F8F;
    margin: 0 auto;
-   padding-top: 0.5px;
+   padding-top: 0.1px;
    border-radius: 25px;
    position: relative;
    animation-name: rainbow;
    animation-duration: 60s;
    animation-iteration-count: infinite;
    animation-timing-function: ease-out;
+   font-size: 14px;
 }
 
 #heart1{
