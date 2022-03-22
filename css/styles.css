@@ -93,8 +93,8 @@
    width: 50px;
    transform: rotate(-45deg);
    animation-name: beatandbounce;
-   animation-duration: 2s;
-   animation-iteration-count: 1;
+   animation-duration: 3.5s;
+   animation-iteration-count: infinite;
    animation-timing-function: ease-out;
 }
 .heart:after {
@@ -118,23 +118,6 @@
    left: 0px;
 }
 
-@keyframes backdiv {
-   75% {
-      background: #BC8F8F;
-      opacity: 0.60;
-   }
-}
-
-@keyframes beatandbounce {
-   0% {
-      transform: scale(1) rotate(-45deg);
-      top: 0;
-   }
-   50% {
-      transform: scale(0.6) rotate(-45deg);
-      top: 50%;
-   }
-}
 @keyframes twinkle {
    20% {
       transform: scale(0.75);
@@ -150,6 +133,84 @@
    }
 }
 
+/*@keyframes backdiv {
+   75% {
+      background: #BC8F8F;
+      opacity: 0.60;
+   }
+}
+*/
+
+@keyframes beatandbounce {
+   0% {
+      transform: scale(1) rotate(-45deg);
+      top: 0;
+   }
+   50% {
+      transform: scale(0.6) rotate(-45deg);
+      top: 45%;
+   }
+   100% {
+      top: 45%;
+   }
+}
+
+@keyframes heart1 {
+   0% {
+      transform: scale(1) rotate(-45deg);
+      top: 0;
+   }
+   50% {
+      transform: scale(0.7) rotate(-45deg);
+      top: 32%;
+   }
+   100% {
+      top: 32%;
+   }
+}
+
+@keyframes heart2 {
+   0% {
+      transform: scale(1) rotate(-45deg);
+      top: 0;
+   }
+   50% {
+      transform: scale(0.65) rotate(-45deg);
+      top: 22%;
+   }
+   100% {
+      top: 22%;
+   }
+}
+
+@keyframes heart3 {
+   0% {
+      transform: scale(1) rotate(-45deg);
+      top: 0;
+   }
+   50% {
+      transform: scale(0.5) rotate(-45deg);
+      top: 35%;
+   }
+   100% {
+      top: 35%;
+   }
+}
+
+@keyframes heart4 {
+   0% {
+      transform: scale(1) rotate(-45deg);
+      top: 0;
+   }
+   50% {
+      transform: scale(0.7) rotate(-45deg);
+      top: 45%;
+   }
+   100% {
+      top: 45%;
+   }
+}
+
 #back {
    position: fixed;
    padding: 0;
@@ -159,7 +220,37 @@
    width: 100%;
    height: 100%;
    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
-   animation-name: backdiv;
+   /*animation-name: backdiv;
    animation-duration: 3s;
-   animation-iteration-count: 2;
+   animation-iteration-count: 3;
+   */
 }
+
+#heart1{
+   left: 14%;
+   animation-name: heart1;
+   animation-duration: 2.5s;
+   animation-timing-function: linear;
+}
+
+#heart2{
+   left: 32%;
+   animation-name: heart2;
+   animation-duration: 3s;
+   animation-timing-function: ease-out;
+}
+
+#heart3{
+   left: 52%;
+   animation-name: heart3;
+   animation-duration: 2.8s;
+   animation-timing-function: linear;
+}
+
+#heart4{
+   left: 77%;
+   animation-name: heart4;
+   animation-duration: 4s;
+   animation-timing-function: ease-out;
+}
+
